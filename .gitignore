@@ -27,4 +27,4 @@ pip-log.txt
 .mr.developer.cfg
 
 #PyChram meteadata folder
-.idea/
+*idea/
