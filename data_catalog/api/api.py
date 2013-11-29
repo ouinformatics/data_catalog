@@ -23,11 +23,11 @@ class ESearchResource(resources.ElasticsearchResource):
 
 class twitterResource(resources.ElasticsearchResource):
     class Meta:
-        resource_name = 'twitter'
+        resource_name = 'alldata' #twitter'
         es_server = getattr(settings, "ES_INDEX_SERVER", "127.0.0.1:9200")
         es_timeout = 20
         #indices = ["movie_db","twitter"]  # ices = ["twitter"]
-        index = resource_name #"movie_db"
+        index = "_all" #resource_name #"movie_db"
         doc_type = None
         authentication = MultiAuthentication(BasicAuthentication(), ApiKeyAuthentication())
     def determine_format(self, request):

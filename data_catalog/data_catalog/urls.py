@@ -17,6 +17,7 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'data_catalog.views.home', name='home'),
     url(r'^metadata/', include('api.urls')),
+    url(r'^account/', include('account.urls')),
     #'api.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

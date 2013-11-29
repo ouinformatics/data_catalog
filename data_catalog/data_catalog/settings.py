@@ -127,6 +127,7 @@ INSTALLED_APPS = (
     'tastypie',
     'tastypie_elasticsearch',
     'api',
+    'account'
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'

@@ -19,7 +19,8 @@ urlpatterns = patterns('',
     #url(r'getapi/', GetApiKeyView.as_view()),
     #url(r'^blog/', include('myapp.urls')),
     url(r'api/', include(v1_api.urls)),
-    url(r'apikey/','api.views.get_api_key')
+    url(r'apikey/','api.views.get_api_key'),
+    url(r'generate_api/([a-zA-Z0-9 .!@#$%^&*]{0,50})/([a-zA-Z0-9 .!@#$%^&*]{0,50})', 'api.views.generate_api'),
     #url(r'api1/', include(v1_api1.urls)),
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
